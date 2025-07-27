@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample Page with Two Images</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+        
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        .image-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin: 30px 0;
+            gap: 20px;
+        }
+        
+        .image-box {
+            width: 45%;
+            min-width: 300px;
+            margin-bottom: 20px;
+            text-align: center;
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .image-box img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+            border: 1px solid #eee;
+        }
+        
+        .caption {
+            margin-top: 15px;
+            font-size: 0.9em;
+            color: #7f8c8d;
+        }
+        
+        @media (max-width: 768px) {
+            .image-box {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Our Featured Images</h1>
+    
+    <div class="image-container">
+        <div class="image-box">
+            <img src="algorick.png" alt="Algorick logo or image">
+            <p class="caption">Algorick - Innovative solutions for modern problems</p>
+        </div>
+        
+        <div class="image-box">
+            <img src="bell.png" alt="Bell icon or image">
+            <p class="caption">Bell - Classic symbol of notification and attention</p>
+        </div>
+    </div>
+    
+    <p style="text-align: center; color: #555;">These images represent different aspects of our work. The first shows our technical capabilities while the second symbolizes our communication approach.</p>
+</body>
+</html>
